@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro to HTML</title>
+</head>
+
+<body id="top">
+  <h2>Text Formating</h2>
+  <p>This is a paragraph.</p>
+  <p><b>This is a bold text</b></p>
+  <p><i>This text is in italics</i></p>
+  <p><del>This is a strike-through text</del></p>
+  <p>2 <sup>2</sup></p>
+  <p>111 <sub>2</sub></p>
+
+  <h2>Lists</h2>
+  <h3>Ordered Lists</h3>
+  <ol>
+    <li>apple</li>
+    <li>watermelon</li>
+    <li>orange</li>
+    <li>pineapple</li>
+    <li>banana</li>
+  </ol>
+  <h3>UnOrderded List</h3>
+  <ul>
+    <li>apple</li>
+    <li>watermelon</li>
+    <li>orange</li>
+    <li>pineapple</li>
+    <li>banana</li>
+  </ul>
+
+  <h2>Links And Anchor</h2>
+  <a href="./about.html" target="_blank">About us page</a>
+  <a href="https://github.com/tolu-c">webdevtolu</a>
+
+  <h2>Images / Media</h2>
+  <img src="./src/ghoostRider.jpg" alt="ghoostRider" width="400" height="200">
+  <br><br><br><br><br>
+  <audio src="./src/test-audio.mp3" controls></audio>
+  <video src="./src/car.mp4" controls></video>
+
+
+  <h2>HTML Form</h2>
+  <form action="./server.js" target="_blank" autocomplete="on">
+    <label for="fName">First name:</label>
+    <br>
+    <input type="text" id="fName" name="fName" placeholder="Enter your first name">
+    <br>
+    <label for="lName">Last Name:</label>
+    <br>
+    <input type="text" id="lName" name="lName" placeholder="Enter your last name">
+    <br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" name="email" id="email" placeholder="Enter your email">
+    <br>
+    <p>What is your gender?</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label>
+
+    <p>What are your favourite fruits?</p>
+    <label for="watermelon">watermelon</label>
+    <input type="checkbox" name="fruits" id="watermelon" value="watermelon">
+    <br>
+    <label for="apple">apple</label>
+    <input type="checkbox" name="fruits" id="apple" value="apple">
+    <br>
+    <label for="orange">orange</label>
+    <input type="checkbox" name="fruits" id="orange" value="orange">
+    <br>
+    <label for="banana">banana</label>
+    <input type="checkbox" name="fruits" id="banana" value="banana" checked>
+    <br>
+    <label for="address">Address:</label>
+    <br>
+    <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter where you live"></textarea>
+
+    <br>
+    <!-- <input type="submit" value="send"> -->
+    <button type="submit">send</button>
+    <button type="reset">reset</button>
+  </form>
+  <br>
+  <a href="#top">Go to Top</a>
+</body>
+
+</html>
