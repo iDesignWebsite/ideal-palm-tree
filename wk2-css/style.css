@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* * reset style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .color {
   /* value types =>
    names (red, blue) 
@@ -40,5 +46,15 @@
   family
    */
    font: italic 900 32px "IBM Plex Mono";
-  
+}
+
+.bg {
+  margin: 10rem auto;
+  width: 80vw;
+  height: 600px;
+  /* ? ignore=> just border prop */
+  border: 1px solid black;
+  /* * background */
+  /* background-color: red; */
+  background-image:url('./src/images/landscape.jpg') ;
 }
