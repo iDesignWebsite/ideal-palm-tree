@@ -1,0 +1,44 @@
+/* ibm plex mono */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.color {
+  /* value types =>
+   names (red, blue) 
+   rgb(red, green, blue) ==> 0 - 255
+   hex => short for hexadecimal, values ranges from 0-9, a-f, starts with "#"
+   3(r,g,b), 6(rr, gg, bb)
+   rgba(red, green, blue, alpha) alpha value ranges from 0 -1
+   */
+  color: rgba(0, 0, 0, 1); 
+  /* 
+  serif
+  sans-serif
+  monospace
+  */
+  /* font-family: 'IBM Plex Mono', monospace; */
+  /* font-family: 'Lato', sans-serif; */
+  /*
+  pre-defined values = small, large, etc
+  px
+  percentage
+  em => 16px
+   rem => relative em
+    */
+  /* font-size: 100%; */
+  /* 
+  font-weight -> values ranges from 100 -900, extra-light - bolder
+   */
+  /* font-weight: lighter;
+  font-style: oblique; */
+  /* font shortand */
+  /* 
+  font-style
+  variant
+  weight
+  size/line-height
+  family
+   */
+   font: italic 900 32px "IBM Plex Mono";
+  
+}
