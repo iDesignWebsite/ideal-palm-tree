@@ -1,11 +1,11 @@
 /* ibm plex mono */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 /* * reset style */
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
   /* border: 2px solid black; */
 }
@@ -17,7 +17,7 @@
    3(r,g,b), 6(rr, gg, bb)
    rgba(red, green, blue, alpha) alpha value ranges from 0 -1
    */
-  color: rgba(0, 0, 0, 1); 
+  color: rgba(0, 0, 0, 1);
   /* 
   serif
   sans-serif
@@ -46,7 +46,7 @@
   size/line-height
   family
    */
-   font: italic 900 32px "IBM Plex Mono";
+  font: italic 900 32px "IBM Plex Mono";
 }
 
 .bg {
@@ -61,7 +61,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; */
-  background: url('./src/images/landscape.jpg') no-repeat center fixed;
+  background: url("../images/ghoostRider.jpg") no-repeat center fixed;
 }
 
 .box {
@@ -99,7 +99,7 @@
   border-bottom:  6px solid red;
   border-right:  4px solid blue;
   border-left:  2px solid black; */
-  border: 4px  black;
+  border: 4px black;
   border-style: solid dotted dashed double;
   margin: 20px;
 }
@@ -107,4 +107,91 @@
   margin: 4rem auto;
   border: 2px solid blue;
   outline: 10px solid red;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+footer > a {
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: #66bfbf;
+  color: #fff;
+}
+
+.pos {
+  border: 1px solid #66bfbf;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  left: 40px;
+  top: 10px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+}
+
+.go_to_top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #66bfbf;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.go_to_top:hover {
+  font-weight: bold;
+}
+
+.relative {
+  position: relative;
+}
+.parent {
+  position: relative;
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+.child {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.populate {
+  height: 500px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sticky {
+  color: black;
+  width: max-content;
+  background-color: greenyellow;
+  border: 1px solid green;
+  padding: 6px;
+  position: sticky;
+  top: 0;
+  right: 0;
+  position: -webkit-sticky; /* * safari */
 }
