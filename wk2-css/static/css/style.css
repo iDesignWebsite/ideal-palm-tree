@@ -195,3 +195,84 @@ footer > a {
   right: 0;
   position: -webkit-sticky; /* * safari */
 }
+
+/* css flex box */
+.flex {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap-reverse;  */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+  padding: 10px 20px;
+  background-color: #0000ff;
+  width: 500px;
+  height: 300px;
+  gap: 20px;
+}
+
+.flex__child {
+  /* flex: none; */
+  width: 40px;
+  height: 30px;
+  background-color: #ff0000;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.flex__child--2 {
+  height: 50px;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.flex--items {
+  background-color: #ff0000;
+  display: flex;
+  align-items: stretch;
+}
+.flex__child__items {
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; */
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+/* .grow--2 {
+  flex-grow: 2;
+}
+.grow--3 {
+  flex-grow: 3;
+} */
+
+.shrink {
+  flex-shrink: 1;
+}
+.shrink-1 {
+  flex-shrink: 0;
+}
