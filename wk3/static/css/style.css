@@ -1,0 +1,27 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #0000ff;
+  transition: all 2s;
+  transition-delay: 1s;
+  transition-timing-function: cubic-bezier(0, 0.81, 0, 1);
+}
+.box:hover {
+  width: 400px;
+  height: 400px;
+  /* background-color: #ff0000; */
+}
+
+.box__to__circle {
+  width: 200px;
+  height: 200px;
+  background-color: #00ff00;
+  margin-top: 10px;
+  transition: all 3s;
+}
+
+.box__to__circle:hover {
+  border-radius: 100%;
+  /* margin-left: 400px; */
+  transform: rotate(360deg);
+}
