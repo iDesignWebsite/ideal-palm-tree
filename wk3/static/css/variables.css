@@ -1,0 +1,27 @@
+:root {
+  --black: #121212;
+  --black444: #444;
+  --white: #f2f2f2;
+  --font-sans: "Arial";
+  --heading-size: 48px;
+  --text-size: 20px;
+  --label-size: 14px;
+}
+
+/* 
+var syntax => var(--name, value)
+ */
+
+p {
+  color: var(--black);
+  font-size: var(--text-size);
+}
+
+h1 {
+  /* --black: #0000ff; */
+  --rauf-black: #444;
+
+  color: var(--black444);
+  font-family: var(--font-sans);
+  font-size: var(--heading-size);
+}
